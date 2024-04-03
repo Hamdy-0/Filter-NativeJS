@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Workbench&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background: #2d2d2d;
+}
+
+.container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 2rem;
+
+  width: 800px;
+}
+
+.container .box {
+  background-color: #c79ebd;
+  padding: 1.5rem;
+  border-radius: 10px;
+  position: relative;
+}
+.container .box h2 {
+  color: #202020;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+.container .box p {
+  font-family: "Workbench", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "BLED" 0, "SCAN" 0;
+  color: #000000;
+  line-height: 1.25;
+  margin-block: 1rem;
+}
+
+canvas {
+  background-color: #fff;
+}
+#cheese {
+  border: none;
+  outline: none;
+  padding: 0.7rem 1.2rem;
+  font-size: 16px;
+  background-color: #ffb0a9;
+  color: #fff;
+  margin: 0 auto;
+  width: 100%;
+}
+#cheese:hover {
+  cursor: pointer;
+  background-color: #ffd5d5;
+}
+#photo:hover {
+  background-color: #fc9f92;
+  cursor: pointer;
+}
+
+form {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.2rem;
+}
+label {
+  color: #000000;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+#selectFilter {
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  margin-left: 0.75rem;
+}
+
+#downloadBtn {
+  text-decoration: none;
+  background: #e58b8b;
+}
+#downloadBtn:hover {
+  background: #dcbdbd;
+  cursor: pointer;
+}
+#undoChanges {
+  background-color: #aaf4f4;
+  color: #000;
+}
+#undoChanges:hover {
+  background: #b0dcdc;
+  cursor: pointer;
+}
+
+.down {
+  display: flex;
+  margin-top: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.btn {
+  padding: 0.7rem 2rem;
+  border: none;
+  outline: none;
+  background: #e67f7f;
+  color: #fff;
+  border-radius: 10px;
+}
+#applyFilter {
+  padding: 0.7rem 0.72rem;
+  cursor: pointer;
+}
+#applyFilter:hover {
+  background-color: #f4c5c5;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #000000;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

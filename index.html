@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h2>Selfie</h2>
+        <p>
+          Just Press the Button 'Cheese' to upload your photo. You Can choose to
+          change the filter after from the select option!
+        </p>
+        <button id="cheese">Cheese</button>
+        <form>
+          <label for="filter">Choose a filter:</label>
+          <select name="filter" id="selectFilter">
+            <option value="">Choose a Filter</option>
+            <option value="blackAndWhite">Black&White</option>
+            <option value="reverse">Reverse</option>
+            <option value="sepia">Sepia</option>
+            <option value="yellow">Yellow</option>
+            <option value="cyan">Cyan</option>
+          </select>
+          <button class="btn" id="applyFilter">apply</button>
+        </form>
+
+        <div class="down">
+          <button class="btn" id="undoChanges">undo</button>
+          <a class="btn" id="downloadBtn">Download</a>
+        </div>
+      </div>
+      <canvas id="canvas1" willReadFrequently="true"></canvas>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
